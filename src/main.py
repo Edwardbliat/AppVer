@@ -82,4 +82,4 @@ def main(page: ft.Page):
     page.go(page.route)
 
 
-ft.app(target=main, web_renderer=ft.WebRenderer.HTML)
+app = ft.app(target=main, export_asgi_app=True)
